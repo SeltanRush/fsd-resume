@@ -1,0 +1,33 @@
+{
+  "name": "fsd-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Andrey Kuznetsov <seltanrush@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.1.6",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "resolve-url-loader": "^2.3.0",
+    "style-loader": "^0.21.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  }
+}
