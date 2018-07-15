@@ -1,0 +1,18 @@
+include ../block-header/block-header
+
+mixin contacts(address, email, phone, website)
+	.contacts
+		+block-header('contact')
+		.contact
+			h4.contact__tag address
+			span.contact__type #{address}
+		.contact
+			h4.contact__tag e-mail
+			span.contact__type #{email}
+		.contact
+			h4.contact__tag phone
+			span.contact__type #{phone}
+		.contact
+			h4.contact__tag website
+			span.contact__type #{website}
+	

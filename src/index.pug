@@ -1,6 +1,6 @@
 include blocks/header/header
 include blocks/profile/profile
-include blocks/contact/contact
+include blocks/contacts/contacts
 include blocks/skills/skills
 include blocks/education/education
 include blocks/experience/experience
@@ -17,6 +17,7 @@ html
 			.wrapper__left
 				+header('name here', 'surname', 'graphic designer')
 				+profile()
+				+contacts('Main Street, City.','contact@domain.com','555-555-555','www.yourweb.com')
 			.wrapper__right
 				+education()
 
