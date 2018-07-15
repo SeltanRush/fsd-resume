@@ -39,7 +39,8 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    compress: true,
+		compress: true,
+		stats: 'errors-only'
   },
   plugins: [
     new HtmlWebpackPlugin({
