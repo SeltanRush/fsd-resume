@@ -1,12 +1,11 @@
 _blue = #3d6cb0
 
 html
-	font-family MyriadProLightSemiExt, Verdana, sans-serif
+	font-family MyriadProRegular, sans-serif
 
 body
 	width 100%
 	margin 0
-	height auto
 
 .wrapper::after
 	content ""
@@ -19,11 +18,14 @@ body
 
 	&__left
 		float left
-		width 35%
+		width 33.4%
+		padding-left 4.18rem
+		overflow hidden
 
 	&__right
-		width 56%
-		float right
+		width 51.3%
+		margin-left 44%
+		overflow hidden
 
 .block-title::before
 	content ""
@@ -31,13 +33,18 @@ body
 	display inline-block
 	background-image: url('images/sprite.png')
 	width 5.4rem
-	height 5.2rem
+	height 5.4rem
 	background-size: 320%
 	left 0.1rem
 	top -1rem
+	.wrapper__left &
+		left 0.8rem
 	
 .education .block-title::before
 	background-position: 11.6rem 5.5rem
+
+.profile .block-title::before
+	background-position: -6rem -0rem;
 
 @import './blocks/profile/profile'
 @import './blocks/contact/contact'
