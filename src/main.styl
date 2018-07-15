@@ -2,6 +2,10 @@ _blue = #3d6cb0
 
 html
 	font-family MyriadProRegular, sans-serif
+	@media screen and (max-width: 1076px)
+			font-size 26px
+	@media screen and (max-width: 768px)
+			font-size 30px
 
 body
 	width 100%
@@ -21,11 +25,21 @@ body
 		width 33.4%
 		padding-left 4.18rem
 		overflow hidden
+		@media screen and (max-width: 1076px)
+			width auto
+			padding-left 1rem
+			padding-right 1rem
 
 	&__right
 		width 51.3%
 		margin-left 44%
 		overflow hidden
+		@media screen and (max-width: 1076px)
+			width auto
+			float left
+			margin 0
+			padding-left 1rem
+			padding-right 1rem
 
 .block-title::before
 	content ""
