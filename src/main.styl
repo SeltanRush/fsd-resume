@@ -4,9 +4,10 @@ _grey = #e6e6e6
 html
 	font-family MyriadProRegular, sans-serif
 	@media screen and (max-width: 1076px)
-			font-size 26px
+			font-size 14px
 	@media screen and (max-width: 768px)
-			font-size 30px
+			font-size 12px
+	
 
 body
 	width 100%
@@ -20,6 +21,7 @@ body
 .wrapper
 	margin 0 auto
 	max-width 1366px
+	margin-bottom 4.6rem
 
 	&__left
 		float left
@@ -28,8 +30,8 @@ body
 		overflow hidden
 		@media screen and (max-width: 1076px)
 			width auto
-			padding-left 1rem
-			padding-right 1rem
+			padding-left 2rem
+			padding-right 2rem
 
 	&__right
 		width 51.3%
@@ -39,8 +41,8 @@ body
 			width auto
 			float left
 			margin 0
-			padding-left 1rem
-			padding-right 1rem
+			padding-left 2rem
+			padding-right 2rem
 
 .block-title::before
 	content ""
@@ -61,6 +63,18 @@ body
 
 .profile .block-title::before
 	background-position: -6rem -0rem;
+	
+.experience .block-title::before
+	background-position: -0.2rem -0.2rem;	
+
+.contacts .block-title::before
+	background-position: -11.8rem -5.8rem;
+
+.software .block-title::before
+	background-position: -0.2rem -6rem;
+
+.skills .block-title::before
+	background-position: -11.8rem -0.2rem;
 
 @import './blocks/profile/profile'
 @import './blocks/contacts/contacts'

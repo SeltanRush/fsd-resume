@@ -1,0 +1,14 @@
+include ../block-header/block-header
+include ../band-bar/band-bar
+
+mixin software(photoshop, illustrator, indesign, dreamweawer, afterEffects, htmlcss)
+	.software
+		+block-header('software')
+		.software__left
+			+band-bar('photoshop', photoshop)
+			+band-bar('illustrator', illustrator)
+			+band-bar('indesign', indesign)
+		.software__right
+			+band-bar('dreamweaver', dreamweawer)
+			+band-bar('after effects', afterEffects)
+			+band-bar('html&css3', htmlcss)
