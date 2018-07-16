@@ -1,0 +1,8 @@
+mixin point-bar(title, count)
+	.point-bar
+		h4.point-bar__title #{title}
+		- let i = 0;
+		- for (;i < count; i++)
+			div(class="point-bar__point point-bar__point_blue")
+		- for	(;i < 12; i++)
+			.point-bar__point

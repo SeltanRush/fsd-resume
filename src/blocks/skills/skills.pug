@@ -1,0 +1,11 @@
+include ../block-header/block-header
+include ../point-bar/point-bar
+
+mixin skills(creative, teamwork, innovate, communication)
+	.skills
+		+block-header('skills')
+		.skills__list
+			+point-bar('creative', creative)
+			+point-bar('teamwork', teamwork)
+			+point-bar('innovate', innovate)
+			+point-bar('communication', communication)
